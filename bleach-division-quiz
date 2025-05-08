@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Which Gotei 13 Division Would Recruit You?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #b0ffb0;
+    }
+    .question {
+      margin-bottom: 30px;
+    }
+    .question p {
+      font-weight: bold;
+    }
+    .option {
+      margin: 5px 0;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #b0ffb0;
+      border: none;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 40px;
+      font-size: 1.2rem;
+      color: #ffd700;
+    }
+  </style>
+</head>
+<body>
+  <h1>Which Gotei 13 Division Would Recruit You?</h1>
+  <form id="quizForm">
+    <div class="question">
+      <p>1. When entering battle, your first priority is:</p>
+      <label class="option"><input type="radio" name="q1" value="2"> Eliminate key targets swiftly</label><br>
+      <label class="option"><input type="radio" name="q1" value="6"> Protect allies and maintain formation</label><br>
+      <label class="option"><input type="radio" name="q1" value="11"> Charge straight into the fray</label><br>
+      <label class="option"><input type="radio" name="q1" value="4"> Keep yourself and others safe</label><br>
+      <label class="option"><input type="radio" name="q1" value="12"> Observe and analyze before acting</label><br>
+      <label class="option"><input type="radio" name="q1" value="1"> Take control and give orders</label>
+    </div><div class="question">
+  <p>2. Your ideal weapon type would be:</p>
+  <label class="option"><input type="radio" name="q2" value="2"> Daggers or concealed blades</label><br>
+  <label class="option"><input type="radio" name="q2" value="6"> A standard katana</label><br>
+  <label class="option"><input type="radio" name="q2" value="11"> A massive blade or fists</label><br>
+  <label class="option"><input type="radio" name="q2" value="4"> Healing tools or tech</label><br>
+  <label class="option"><input type="radio" name="q2" value="12"> Something unique or experimental</label><br>
+  <label class="option"><input type="radio" name="q2" value="9"> A bow, scythe, or creative gear</label>
+</div>
+
+<div class="question">
+  <p>3. Which best describes your personality?</p>
+  <label class="option"><input type="radio" name="q3" value="2"> Quiet, focused, calculated</label><br>
+  <label class="option"><input type="radio" name="q3" value="6"> Loyal, honest, selfless</label><br>
+  <label class="option"><input type="radio" name="q3" value="11"> Bold, fearless, direct</label><br>
+  <label class="option"><input type="radio" name="q3" value="4"> Kind, thoughtful, empathetic</label><br>
+  <label class="option"><input type="radio" name="q3" value="12"> Curious, mischievous, unconventional</label><br>
+  <label class="option"><input type="radio" name="q3" value="7"> Reserved, patient, methodical</label>
+</div>
+
+<div class="question">
+  <p>4. When faced with a moral dilemma, you:</p>
+  <label class="option"><input type="radio" name="q4" value="2"> Do what must be done, no matter the cost</label><br>
+  <label class="option"><input type="radio" name="q4" value="13"> Follow your heart and duty</label><br>
+  <label class="option"><input type="radio" name="q4" value="11"> Trust your instincts and act</label><br>
+  <label class="option"><input type="radio" name="q4" value="4"> Protect the innocent</label><br>
+  <label class="option"><input type="radio" name="q4" value="5"> Think deeply about every option</label><br>
+  <label class="option"><input type="radio" name="q4" value="1"> Defer to wisdom or rules</label>
+</div>
+
+<div class="question">
+  <p>5. What type of work fulfills you most?</p>
+  <label class="option"><input type="radio" name="q5" value="2"> Stealth operations and infiltration</label><br>
+  <label class="option"><input type="radio" name="q5" value="1"> Leading and coordinating</label><br>
+  <label class="option"><input type="radio" name="q5" value="11"> Combat and testing limits</label><br>
+  <label class="option"><input type="radio" name="q5" value="4"> Healing and support</label><br>
+  <label class="option"><input type="radio" name="q5" value="12"> Experiments and discoveries</label><br>
+  <label class="option"><input type="radio" name="q5" value="9"> Information gathering and arts</label>
+</div>
+
+<div class="question">
+  <p>6. You prefer a captain who is:</p>
+  <label class="option"><input type="radio" name="q6" value="2"> Disciplined and silent</label><br>
+  <label class="option"><input type="radio" name="q6" value="6"> Noble and traditional</label><br>
+  <label class="option"><input type="radio" name="q6" value="11"> Fierce and fearless</label><br>
+  <label class="option"><input type="radio" name="q6" value="4"> Compassionate and wise</label><br>
+  <label class="option"><input type="radio" name="q6" value="12"> Brilliant and eccentric</label><br>
+  <label class="option"><input type="radio" name="q6" value="8"> Easygoing but insightful</label>
+</div>
+
+<div class="question">
+  <p>7. Your inner world feels most like:</p>
+  <label class="option"><input type="radio" name="q7" value="2"> A moonlit forest with hidden paths</label><br>
+  <label class="option"><input type="radio" name="q7" value="10"> A still lake beneath snowy peaks</label><br>
+  <label class="option"><input type="radio" name="q7" value="11"> A raging battlefield of flame</label><br>
+  <label class="option"><input type="radio" name="q7" value="4"> A tranquil garden with blossoms</label><br>
+  <label class="option"><input type="radio" name="q7" value="12"> A glowing labyrinth of lights</label><br>
+  <label class="option"><input type="radio" name="q7" value="13"> A misty mountain with trails</label>
+</div>
+
+<div class="question">
+  <p>8. Choose the element that resonates most with you:</p>
+  <label class="option"><input type="radio" name="q8" value="2"> Shadow</label><br>
+  <label class="option"><input type="radio" name="q8" value="10"> Water</label><br>
+  <label class="option"><input type="radio" name="q8" value="11"> Fire</label><br>
+  <label class="option"><input type="radio" name="q8" value="4"> Light</label><br>
+  <label class="option"><input type="radio" name="q8" value="12"> Lightning</label><br>
+  <label class="option"><input type="radio" name="q8" value="13"> Wind</label>
+</div>
+
+<div class="question">
+  <p>9. In a team, your role tends to be:</p>
+  <label class="option"><input type="radio" name="q9" value="2"> Lone scout or assassin</label><br>
+  <label class="option"><input type="radio" name="q9" value="6"> Reliable second-in-command</label><br>
+  <label class="option"><input type="radio" name="q9" value="11"> Frontline powerhouse</label><br>
+  <label class="option"><input type="radio" name="q9" value="4"> Support and morale boost</label><br>
+  <label class="option"><input type="radio" name="q9" value="12"> Strategist or wildcard</label><br>
+  <label class="option"><input type="radio" name="q9" value="3"> Patient observer</label>
+</div>
+
+<div class="question">
+  <p>10. Your ideal squad environment is:</p>
+  <label class="option"><input type="radio" name="q10" value="2"> Quiet and efficient</label><br>
+  <label class="option"><input type="radio" name="q10" value="6"> Traditional and respectful</label><br>
+  <label class="option"><input type="radio" name="q10" value="11"> Rowdy and intense</label><br>
+  <label class="option"><input type="radio" name="q10" value="4"> Nurturing and cooperative</label><br>
+  <label class="option"><input type="radio" name="q10" value="12"> Experimental and weird</label><br>
+  <label class="option"><input type="radio" name="q10" value="9"> Artistic and free-thinking</label>
+</div>
+
+<button type="button" onclick="calculateResult()">Submit</button>
+
+  </form>  <div id="result"></div>  <script>
+    function calculateResult() {
+      const form = document.forms['quizForm'];
+      const answers = [...form.elements].filter(e => e.checked).map(e => parseInt(e.value));
+      const counts = {};
+      answers.forEach(val => { counts[val] = (counts[val] || 0) + 1; });
+      let max = 0;
+      let squad = null;
+      for (const key in counts) {
+        if (counts[key] > max) {
+          max = counts[key];
+          squad = key;
+        }
+      }
+      const squadMap = {
+        1: 'Squad 1: Command & Coordination',
+        2: 'Squad 2: Stealth Ops & Assassination',
+        3: 'Squad 3: Patience & Investigation',
+        4: 'Squad 4: Healing & Relief',
+        5: 'Squad 5: Precision & Insight',
+        6: 'Squad 6: Nobility & Order',
+        7: 'Squad 7: Loyalty & Endurance',
+        8: 'Squad 8: Joy & Subtle Strength',
+        9: 'Squad 9: Arts & Information',
+        10: 'Squad 10: Balance & Adaptability',
+        11: 'Squad 11: Combat & Power',
+        12: 'Squad 12: Research & Innovation',
+        13: 'Squad 13: Guardianship & Resolve'
+      };
+      document.getElementById('result').textContent = `You would be recruited into: ${squadMap[squad] || 'an unknown squad!'}`;
+    }
+  </script></body>
+</html>
