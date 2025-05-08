@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Which Gotei 13 Division Would Recruit You?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #b0ffb0;
+    }
+    .question {
+      margin-bottom: 30px;
+    }
+    .question p {
+      font-weight: bold;
+    }
+    .option {
+      margin: 5px 0;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #b0ffb0;
+      border: none;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 40px;
+      font-size: 1.2rem;
+      color: #ffd700;
+    }
+  </style>
+</head>
+<body>
+  <h1>Which Gotei 13 Division Would Recruit You?</h1>
+  <form id="quizForm">
+    <div class='question'><p>1. When entering battle, what defines your approach?</p>
+<label class='option'><input type='radio' name='q1' value='2'> Stealth and precision</label><br>
+<label class='option'><input type='radio' name='q1' value='1'> Command and coordination</label><br>
+<label class='option'><input type='radio' name='q1' value='11'> Forceful and fearless</label><br>
+<label class='option'><input type='radio' name='q1' value='4'> Support and protection</label><br>
+<label class='option'><input type='radio' name='q1' value='10'> Adapt and counter</label><br>
+<label class='option'><input type='radio' name='q1' value='5'> Strategic foresight</label><br>
+<label class='option'><input type='radio' name='q1' value='3'> Observation and patience</label><br>
+<label class='option'><input type='radio' name='q1' value='8'> Joy and flow</label><br>
+<label class='option'><input type='radio' name='q1' value='9'> Creativity and artistry</label><br>
+<label class='option'><input type='radio' name='q1' value='12'> Exploration and curiosity</label><br>
+<label class='option'><input type='radio' name='q1' value='7'> Endurance and resolve</label><br>
+<label class='option'><input type='radio' name='q1' value='13'> Faith and guardianship</label><br>
+<label class='option'><input type='radio' name='q1' value='6'> Honor and order</label><br>
+</div>
+<div class='question'><p>2. Your ideal captain would be:</p>
+<label class='option'><input type='radio' name='q2' value='2'> A strict but brilliant tactician</label><br>
+<label class='option'><input type='radio' name='q2' value='1'> A composed and fair leader</label><br>
+<label class='option'><input type='radio' name='q2' value='11'> An unstoppable warrior</label><br>
+<label class='option'><input type='radio' name='q2' value='4'> A wise and gentle healer</label><br>
+<label class='option'><input type='radio' name='q2' value='10'> Someone who adapts under pressure</label><br>
+<label class='option'><input type='radio' name='q2' value='5'> A perceptive mind</label><br>
+<label class='option'><input type='radio' name='q2' value='3'> A quiet observer</label><br>
+<label class='option'><input type='radio' name='q2' value='8'> A charismatic and kind soul</label><br>
+<label class='option'><input type='radio' name='q2' value='9'> A creative and bold innovator</label><br>
+<label class='option'><input type='radio' name='q2' value='12'> A mad scientist genius</label><br>
+<label class='option'><input type='radio' name='q2' value='7'> An enduring protector</label><br>
+<label class='option'><input type='radio' name='q2' value='13'> A humble spiritual guardian</label><br>
+<label class='option'><input type='radio' name='q2' value='6'> An aristocratic disciplinarian</label><br>
+</div>
+<div class='question'><p>3. What kind of missions excite you the most?</p>
+<label class='option'><input type='radio' name='q3' value='2'> Infiltration ops</label><br>
+<label class='option'><input type='radio' name='q3' value='1'> Crisis leadership</label><br>
+<label class='option'><input type='radio' name='q3' value='11'> Combat-heavy raids</label><br>
+<label class='option'><input type='radio' name='q3' value='4'> Disaster relief</label><br>
+<label class='option'><input type='radio' name='q3' value='10'> Tactical support</label><br>
+<label class='option'><input type='radio' name='q3' value='5'> Cerebral puzzles</label><br>
+<label class='option'><input type='radio' name='q3' value='3'> Shadow reconnaissance</label><br>
+<label class='option'><input type='radio' name='q3' value='8'> Moral support & team harmony</label><br>
+<label class='option'><input type='radio' name='q3' value='9'> Espionage and decoding</label><br>
+<label class='option'><input type='radio' name='q3' value='12'> Research expeditions</label><br>
+<label class='option'><input type='radio' name='q3' value='7'> Marathon endurance tasks</label><br>
+<label class='option'><input type='radio' name='q3' value='13'> Spiritual pilgrimages</label><br>
+<label class='option'><input type='radio' name='q3' value='6'> Traditional protection duty</label><br>
+</div>
+<div class='question'><p>4. What trait best defines you?</p>
+<label class='option'><input type='radio' name='q4' value='2'> Focused</label><br>
+<label class='option'><input type='radio' name='q4' value='1'> Reliable</label><br>
+<label class='option'><input type='radio' name='q4' value='11'> Fierce</label><br>
+<label class='option'><input type='radio' name='q4' value='4'> Nurturing</label><br>
+<label class='option'><input type='radio' name='q4' value='10'> Adaptable</label><br>
+<label class='option'><input type='radio' name='q4' value='5'> Insightful</label><br>
+<label class='option'><input type='radio' name='q4' value='3'> Patient</label><br>
+<label class='option'><input type='radio' name='q4' value='8'> Uplifting</label><br>
+<label class='option'><input type='radio' name='q4' value='9'> Expressive</label><br>
+<label class='option'><input type='radio' name='q4' value='12'> Inventive</label><br>
+<label class='option'><input type='radio' name='q4' value='7'> Stubborn</label><br>
+<label class='option'><input type='radio' name='q4' value='13'> Spiritual</label><br>
+<label class='option'><input type='radio' name='q4' value='6'> Disciplined</label><br>
+</div>
+<div class='question'><p>5. How do you respond under pressure?</p>
+<label class='option'><input type='radio' name='q5' value='2'> Move without hesitation</label><br>
+<label class='option'><input type='radio' name='q5' value='1'> Organize and lead others</label><br>
+<label class='option'><input type='radio' name='q5' value='11'> Push through with brute force</label><br>
+<label class='option'><input type='radio' name='q5' value='4'> Prioritize safety</label><br>
+<label class='option'><input type='radio' name='q5' value='10'> Shift tactics mid-battle</label><br>
+<label class='option'><input type='radio' name='q5' value='5'> Break down the logic</label><br>
+<label class='option'><input type='radio' name='q5' value='3'> Watch and wait for the right moment</label><br>
+<label class='option'><input type='radio' name='q5' value='8'> Use humor and presence to defuse tension</label><br>
+<label class='option'><input type='radio' name='q5' value='9'> Record and interpret the situation</label><br>
+<label class='option'><input type='radio' name='q5' value='12'> Use tools and tech</label><br>
+<label class='option'><input type='radio' name='q5' value='7'> Stay calm and carry the burden</label><br>
+<label class='option'><input type='radio' name='q5' value='13'> Trust in destiny</label><br>
+<label class='option'><input type='radio' name='q5' value='6'> Remain faithful to tradition</label><br>
+</div>
+<div class='question'><p>6. Which quality do you admire in others?</p>
+<label class='option'><input type='radio' name='q6' value='2'> Discipline</label><br>
+<label class='option'><input type='radio' name='q6' value='1'> Integrity</label><br>
+<label class='option'><input type='radio' name='q6' value='11'> Bravery</label><br>
+<label class='option'><input type='radio' name='q6' value='4'> Compassion</label><br>
+<label class='option'><input type='radio' name='q6' value='10'> Adaptability</label><br>
+<label class='option'><input type='radio' name='q6' value='5'> Intellect</label><br>
+<label class='option'><input type='radio' name='q6' value='7'> Endurance</label><br>
+<label class='option'><input type='radio' name='q6' value='8'> Joyfulness</label><br>
+<label class='option'><input type='radio' name='q6' value='9'> Creativity</label><br>
+<label class='option'><input type='radio' name='q6' value='12'> Innovation</label><br>
+<label class='option'><input type='radio' name='q6' value='3'> Insight</label><br>
+<label class='option'><input type='radio' name='q6' value='13'> Spiritual depth</label><br>
+<label class='option'><input type='radio' name='q6' value='6'> Respect for rules</label><br>
+</div>
+<div class='question'><p>7. If given freedom in the Seireitei, you'd:</p>
+<label class='option'><input type='radio' name='q7' value='2'> Disappear into the shadows</label><br>
+<label class='option'><input type='radio' name='q7' value='1'> Take responsibility for your squad</label><br>
+<label class='option'><input type='radio' name='q7' value='11'> Go sparring or explore danger zones</label><br>
+<label class='option'><input type='radio' name='q7' value='4'> Volunteer at the clinic</label><br>
+<label class='option'><input type='radio' name='q7' value='10'> Wander and observe</label><br>
+<label class='option'><input type='radio' name='q7' value='5'> Debate theories or write reports</label><br>
+<label class='option'><input type='radio' name='q7' value='3'> Stroll silently, watching</label><br>
+<label class='option'><input type='radio' name='q7' value='8'> Check in with friends and smile</label><br>
+<label class='option'><input type='radio' name='q7' value='9'> Paint, compose, or record</label><br>
+<label class='option'><input type='radio' name='q7' value='12'> Test something experimental</label><br>
+<label class='option'><input type='radio' name='q7' value='7'> Practice endurance</label><br>
+<label class='option'><input type='radio' name='q7' value='13'> Meditate at the Senkaimon</label><br>
+<label class='option'><input type='radio' name='q7' value='6'> Polish your uniform</label><br>
+</div>
+<div class='question'><p>8. In a team, you're usually:</p>
+<label class='option'><input type='radio' name='q8' value='2'> The quiet executor</label><br>
+<label class='option'><input type='radio' name='q8' value='1'> The decision maker</label><br>
+<label class='option'><input type='radio' name='q8' value='11'> The spearhead</label><br>
+<label class='option'><input type='radio' name='q8' value='4'> The caretaker</label><br>
+<label class='option'><input type='radio' name='q8' value='10'> The adaptable support</label><br>
+<label class='option'><input type='radio' name='q8' value='5'> The analyst</label><br>
+<label class='option'><input type='radio' name='q8' value='3'> The eyes and ears</label><br>
+<label class='option'><input type='radio' name='q8' value='8'> The soul of the team</label><br>
+<label class='option'><input type='radio' name='q8' value='9'> The creative mind</label><br>
+<label class='option'><input type='radio' name='q8' value='12'> The wildcard</label><br>
+<label class='option'><input type='radio' name='q8' value='7'> The tireless one</label><br>
+<label class='option'><input type='radio' name='q8' value='13'> The one who prays or reflects</label><br>
+<label class='option'><input type='radio' name='q8' value='6'> The role model</label><br>
+</div>
+<div class='question'><p>9. What environment energizes you?</p>
+<label class='option'><input type='radio' name='q9' value='2'> Night missions</label><br>
+<label class='option'><input type='radio' name='q9' value='1'> A briefing room</label><br>
+<label class='option'><input type='radio' name='q9' value='11'> The heat of battle</label><br>
+<label class='option'><input type='radio' name='q9' value='4'> Peaceful spaces</label><br>
+<label class='option'><input type='radio' name='q9' value='10'> A place with lots going on</label><br>
+<label class='option'><input type='radio' name='q9' value='5'> A library or lab</label><br>
+<label class='option'><input type='radio' name='q9' value='3'> Quiet field watch</label><br>
+<label class='option'><input type='radio' name='q9' value='8'> Lively festival</label><br>
+<label class='option'><input type='radio' name='q9' value='9'> Art studio or stage</label><br>
+<label class='option'><input type='radio' name='q9' value='12'> Tech lab</label><br>
+<label class='option'><input type='radio' name='q9' value='7'> Mountain trail</label><br>
+<label class='option'><input type='radio' name='q9' value='13'> Shrine or temple</label><br>
+<label class='option'><input type='radio' name='q9' value='6'> Dojo</label><br>
+</div>
+<div class='question'><p>10. If you had a day off, you'd spend it:</p>
+<label class='option'><input type='radio' name='q10' value='2'> Training in stealth</label><br>
+<label class='option'><input type='radio' name='q10' value='1'> Checking on your squad</label><br>
+<label class='option'><input type='radio' name='q10' value='11'> Fighting hollows for fun</label><br>
+<label class='option'><input type='radio' name='q10' value='4'> Volunteering</label><br>
+<label class='option'><input type='radio' name='q10' value='10'> Reading battle data</label><br>
+<label class='option'><input type='radio' name='q10' value='5'> Solving riddles</label><br>
+<label class='option'><input type='radio' name='q10' value='3'> Watching birds quietly</label><br>
+<label class='option'><input type='radio' name='q10' value='8'> Cooking or partying</label><br>
+<label class='option'><input type='radio' name='q10' value='9'> Writing poetry or sculpting</label><br>
+<label class='option'><input type='radio' name='q10' value='12'> Building something weird</label><br>
+<label class='option'><input type='radio' name='q10' value='7'> Doing a long-distance run</label><br>
+<label class='option'><input type='radio' name='q10' value='13'> Reflecting in silence</label><br>
+<label class='option'><input type='radio' name='q10' value='6'> Polishing weapons</label><br>
+</div>
+<div class='question'><p>11. Your greatest strength is:</p>
+<label class='option'><input type='radio' name='q11' value='2'> Focus</label><br>
+<label class='option'><input type='radio' name='q11' value='1'> Responsibility</label><br>
+<label class='option'><input type='radio' name='q11' value='11'> Fearlessness</label><br>
+<label class='option'><input type='radio' name='q11' value='4'> Empathy</label><br>
+<label class='option'><input type='radio' name='q11' value='10'> Tactical shifts</label><br>
+<label class='option'><input type='radio' name='q11' value='5'> Analysis</label><br>
+<label class='option'><input type='radio' name='q11' value='3'> Patience</label><br>
+<label class='option'><input type='radio' name='q11' value='8'> Charisma</label><br>
+<label class='option'><input type='radio' name='q11' value='9'> Creativity</label><br>
+<label class='option'><input type='radio' name='q11' value='12'> Innovation</label><br>
+<label class='option'><input type='radio' name='q11' value='7'> Endurance</label><br>
+<label class='option'><input type='radio' name='q11' value='13'> Faith</label><br>
+<label class='option'><input type='radio' name='q11' value='6'> Honor</label><br>
+</div>
+<div class='question'><p>12. What makes a leader great?</p>
+<label class='option'><input type='radio' name='q12' value='2'> Quiet capability</label><br>
+<label class='option'><input type='radio' name='q12' value='1'> Sound judgment</label><br>
+<label class='option'><input type='radio' name='q12' value='11'> Inspiring power</label><br>
+<label class='option'><input type='radio' name='q12' value='4'> Gentle strength</label><br>
+<label class='option'><input type='radio' name='q12' value='10'> Adaptability</label><br>
+<label class='option'><input type='radio' name='q12' value='5'> Vision</label><br>
+<label class='option'><input type='radio' name='q12' value='3'> Understanding silence</label><br>
+<label class='option'><input type='radio' name='q12' value='8'> Connection with people</label><br>
+<label class='option'><input type='radio' name='q12' value='9'> Culture and soul</label><br>
+<label class='option'><input type='radio' name='q12' value='12'> Thinking outside the box</label><br>
+<label class='option'><input type='radio' name='q12' value='7'> Persistence</label><br>
+<label class='option'><input type='radio' name='q12' value='13'> Spiritual balance</label><br>
+<label class='option'><input type='radio' name='q12' value='6'> Upholding structure</label><br>
+</div>
+<div class='question'><p>13. Which scenario do you prefer?</p>
+<label class='option'><input type='radio' name='q13' value='2'> A covert mission into enemy land</label><br>
+<label class='option'><input type='radio' name='q13' value='1'> Leading troops into unknown territory</label><br>
+<label class='option'><input type='radio' name='q13' value='11'> A duel with a powerful Hollow</label><br>
+<label class='option'><input type='radio' name='q13' value='4'> Healing and rescuing civilians</label><br>
+<label class='option'><input type='radio' name='q13' value='10'> A border skirmish with unknown foes</label><br>
+<label class='option'><input type='radio' name='q13' value='5'> Investigating spiritual anomalies</label><br>
+<label class='option'><input type='radio' name='q13' value='3'> Scouting a forest for threats</label><br>
+<label class='option'><input type='radio' name='q13' value='8'> Organizing a festival for morale</label><br>
+<label class='option'><input type='radio' name='q13' value='9'> Capturing beauty in a painting</label><br>
+<label class='option'><input type='radio' name='q13' value='12'> Testing new reiryoku tools</label><br>
+<label class='option'><input type='radio' name='q13' value='7'> Delivering supplies long distance</label><br>
+<label class='option'><input type='radio' name='q13' value='13'> Escorting sacred relics</label><br>
+<label class='option'><input type='radio' name='q13' value='6'> Guarding the barracks with precision</label><br>
+</div>
+<div class='question'><p>14. Your greatest fear is:</p>
+<label class='option'><input type='radio' name='q14' value='2'> Being exposed</label><br>
+<label class='option'><input type='radio' name='q14' value='1'> Making the wrong decision</label><br>
+<label class='option'><input type='radio' name='q14' value='11'> Losing strength</label><br>
+<label class='option'><input type='radio' name='q14' value='4'> Failing to save someone</label><br>
+<label class='option'><input type='radio' name='q14' value='10'> Being caught off guard</label><br>
+<label class='option'><input type='radio' name='q14' value='5'> Not understanding something important</label><br>
+<label class='option'><input type='radio' name='q14' value='3'> Being too slow to act</label><br>
+<label class='option'><input type='radio' name='q14' value='8'> Losing connection with others</label><br>
+<label class='option'><input type='radio' name='q14' value='9'> Losing inspiration</label><br>
+<label class='option'><input type='radio' name='q14' value='12'> Becoming irrelevant</label><br>
+<label class='option'><input type='radio' name='q14' value='7'> Wearing out</label><br>
+<label class='option'><input type='radio' name='q14' value='13'> Breaking sacred vows</label><br>
+<label class='option'><input type='radio' name='q14' value='6'> Disgracing your house</label><br>
+</div>
+
+    <button type="button" onclick="calculateResult()">Submit</button>
+  </form>
+  <div id="result"></div>
+  <script>
+    function calculateResult() {
+      const form = document.forms['quizForm'];
+      const answers = [...form.elements].filter(e => e.checked).map(e => parseInt(e.value));
+      const counts = {};
+      answers.forEach(val => { counts[val] = (counts[val] || 0) + 1; });
+      let max = 0;
+      let squad = null;
+      for (const key in counts) {
+        if (counts[key] > max) {
+          max = counts[key];
+          squad = key;
+        }
+      }
+      const squadMap = {
+        1: 'Squad 1: Command & Coordination',
+        2: 'Squad 2: Stealth Ops & Assassination',
+        3: 'Squad 3: Patience & Investigation',
+        4: 'Squad 4: Healing & Relief',
+        5: 'Squad 5: Precision & Insight',
+        6: 'Squad 6: Nobility & Order',
+        7: 'Squad 7: Loyalty & Endurance',
+        8: 'Squad 8: Joy & Subtle Strength',
+        9: 'Squad 9: Arts & Information',
+        10: 'Squad 10: Balance & Adaptability',
+        11: 'Squad 11: Combat & Power',
+        12: 'Squad 12: Research & Innovation',
+        13: 'Squad 13: Guardianship & Resolve'
+      };
+      document.getElementById('result').textContent = `You would be recruited into: ${squadMap[squad] || 'an unknown squad!'}`;
+    }
+  </script>
+</body>
+</html>
